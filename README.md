@@ -59,6 +59,18 @@ npm run build
 npm run lint
 ```
 
+## Deploy (GitHub Pages)
+
+This repository is configured to deploy automatically to GitHub Pages when `main` is updated.
+
+1. In GitHub, open **Settings > Pages**.
+2. Set **Source** to **GitHub Actions**.
+3. Push changes to `main` (or run the **Deploy to GitHub Pages** workflow manually).
+
+After deployment, the site URL will be:
+
+`https://<your-github-username>.github.io/AI-business-creation/`
+
 ## Database Schema
 
 ### contact_submissions
