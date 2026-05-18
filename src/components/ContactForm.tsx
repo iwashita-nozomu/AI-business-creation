@@ -30,6 +30,10 @@ export default function ContactForm() {
     setSubmitStatus('idle')
 
     try {
+      if (!supabase) {
+        throw new Error('Supabase is not configured. Please set VITE_SUPABASE_URL and VITE_SUPABASE_ANON_KEY.')
+      }
+
       const { error } = await supabase
         .from('contact_submissions')
         .insert([
